@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login Facebook</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="contanier">
+            <div>
+                <div class="img-facebook">
+                    <img src="img/face.svg" alt="Facebook">
+                </div>
+                <div class="logins-recentes">
+                    <h1>Logins recentes</h1>
+                    <p>Clique na sua foto ou adicione uma conta</p>
+                </div>
+                <div class="usuarios">
+                    <div class="removerConta">
+                        <a href="#" class="linkRemoverConta">x</a>
+                        <p class="paragrafo-remover" >Remover conta destá Página</p>
+                    </div>
+                    <div class="usuario">
+                        <a href="#">
+                            <img src="img/alex.jpg" alt="">
+                            <div class="nome-usuario">Alex</div>
+                        </a>
+                    </div>
+                    <div class="adicionar">
+                        <a href="#">
+                            <div class="card-adicionar">
+                                <div class="circulo">+</div>
+                            </div>
+                            <div class="adicionarConta">Adicionar conta</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <form action="#">
+                <div class="login-direito">
+                    <div class="login">
+                        <input type="text" placeholder="Email ou telefone" autofocus="1" required>
+                        <input type="password" required placeholder="Senha">
+                        <button type="submit">Entrar</button>
+                    </div>
+                    <div class="esqueceuSenha"><a href="#">Esqueceu a senha?</a></div>
+                    <hr>
+                    <a href="#" class="criaConta">Criar nova conta</a>
+                </div>
+                <div class="criaPagina">
+                    <a href="#"><strong>Criar uma Página</strong></a>
+                    <p>&nbsp;para uma celebridade, banda ou empresa.</p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+        <!-- modal-logado -->
+    <div class="modal-logado">
+        <div class="modal-logado-usuario">
+            <div class="fechar">x</div>
+            <div class="img-usuario">
+                <img src="img/alex.jpg" alt="Alex Pereira">
+                <span class="modal-nome-usario">Alex Pereira</span>
+            </div>
+            <form class="modal-final">
+                <input type="password" required placeholder="Senha">
+                <div class="lembrar-senha">
+                    <label>
+                        <input type="checkbox">
+                        <span>Lembrar senha</span>
+                    </label>
+                </div>
+                <button class="modal-button-entrar">Entrar</button>
+            </form>
+            <div class="esqueceuSenha"><a href="#">Esqueceu a senha?</a></div>
+        </div>
+    </div>
+
+    <!-- Modal adicionar conta -->
+    <div class="modal-adicionar-usuario">
+        <div class="modal-adicionar-centralizar">
+            <div class="fechar" id="fechar-modal-usuario">x</div>
+            <h3>Entrar no Facebook</h3>
+            <hr>
+            <form class="modal-final">
+                <input type="text" placeholder="Email ou telefone" autofocus="1" required>
+                <input type="password" required placeholder="Senha">
+            </form>
+            <div class="lembrar-senha">
+                <label>
+                    <input type="checkbox">
+                    <span>Lembrar senha</span>
+                </label>
+            </div>
+            <button class="modal-button-entrar">Entrar</button>
+            <div class="esqueceuSenha"><a href="#">Esqueceu a senha?</a></div>
+
+        </div>
+    </div>
+    <script src="javascript/javascript.js"></script>
+</body>
+
+</html>

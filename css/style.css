@@ -1,0 +1,365 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+body {
+    background-color: #F0F2F5;
+}
+a {
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contanier {
+    display: flex;
+    width: 990px;
+    height: 657px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.img-facebook {
+    margin-left : -20px;
+    max-width: 199px;
+}
+/* lado esquerdo da tela */
+.logins-recentes {  
+    margin-bottom: 30px;
+}
+.logins-recentes h1 {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    color: #1C1E21;
+}
+.logins-recentes p {
+    font-size: 15px;
+    color: #363636;
+    line-height: 24px;
+}
+.usuarios {
+    display: flex;
+}
+.usuario {
+    margin-right: 15px;
+    background-color: #FFF;
+    border-radius: 6px;
+    border: solid 1px #cacaca;
+}
+.usuario:hover, .adicionar:hover {
+    box-shadow: 1px 0px 10px #adadadc2;
+}
+.usuario img {
+    border-radius: 6px 6px 0px 0px;
+}
+.nome-usuario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    color: #4B4F56;
+}
+.removerConta {
+    position: absolute;
+}
+.linkRemoverConta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15px;
+    height: 15px;
+    padding: 10px;
+    position: absolute;
+    margin: 2px;
+    color: #fff;
+    background-color: #000;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+.removerConta a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    background-color: #FFF;
+    opacity: 1;
+}
+.paragrafo-remover {
+    display: none;
+    padding: 8px;
+    font-size: 12px;
+    background-color: #000;
+    color: #FFF;
+    position: relative;
+    bottom: 40px;
+}
+.adicionar {
+    border-radius: 6px;
+}
+.card-adicionar {
+    width: 160px;
+    height: 160px;
+    border: solid 1px #cacaca;
+    border-radius: 6px 6px 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #166FE5;
+}
+.adicionarConta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+    color: #166FE5;
+    background-color: #FFF;
+    border: solid 1px #cacaca;
+    border-radius: 0px 0px 6px 6px;
+}
+
+/* lado direito da tela */
+.login-direito {
+    margin: 30px 0;
+    padding: 15px;
+    background-color: #FFF;
+    border-radius: 10px;
+    box-shadow: 1px 0px 10px #adadadc2;
+}
+.login {
+    display: flex;
+    flex-direction: column;
+}
+.login input {
+    font-size: 17px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border-color: #ccd0d5;
+    outline-color: #85b2ee;
+}
+
+.login button {
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #FFF;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1d7bf6;
+    cursor: pointer;
+}
+ .login button:hover {
+    transition: all 1s;
+    background-color:#166FE5;
+}
+.esqueceuSenha {
+    text-align: center;
+    padding: 20px;
+}
+.esqueceuSenha a {
+    color: #166FE5;
+}
+.esqueceuSenha a:hover {
+    text-decoration: underline;
+}
+hr {
+    opacity: 0.3;
+}
+.criaConta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 170px;
+    height: 50px;
+    margin: 25px auto;
+    background-color: #3eb626;
+    font-family: Arial;
+    font-size: 17px;
+    font-weight: bold;
+    color: #FFF;
+    border-radius: 6px;
+}
+.criaConta:hover {
+    background-color: #36A420;
+    transition: all 1s;
+}
+form .criaPagina {
+    display: flex;
+    padding: 10px;
+    font-size: 14px;
+    justify-content: center;
+}
+form .criaPagina a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+form .criaPagina a:hover {
+    text-decoration: underline;
+}
+/* modais */
+.modal-logado{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    border: none;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-logado-usuario {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 490px;
+    background-color: #FFF;
+    border-radius: 6px;
+    position: relative;
+}
+.img-usuario img {
+    border-radius: 50%;
+    margin: 15px auto;
+}
+.modal-nome-usario {
+    display: block;
+    text-align: center;
+}
+.modal-final input {
+    height: 50px;
+    opacity: 0.6;
+}
+.modal-adicionar-usuario {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+.modal-adicionar-centralizar {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 365px;
+    background-color: #FFF;
+    border-radius: 6px;
+    position: relative;
+}
+.fechar {
+    position: absolute;
+    top: 12px;
+    right: 16px;
+    width: 40px;
+    height: 40px;
+    background-color: #DADDE1;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+.fechar:hover {
+    background-color: #c5c8cc;
+}
+.modal-adicionar-centralizar h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: normal;
+    color: #000;
+}
+.modal-final {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.modal-final input {
+    padding: 10px;
+    margin: 16px 12px 0px 12px;
+    height: 50px;
+    border-radius: 6px;     
+    border-color: #ccd0d5;
+    outline-color: #85b2ee;
+    opacity: 1;
+}
+.lembrar-senha input {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+label input {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+}
+.modal-button-entrar {
+    margin: 16px 12px 0px 12px;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    color: #FFF;
+    height: 50px;
+    border-radius: 6px;
+    border: none;
+    background-color: #1d7bf6;
+    cursor: pointer;
+}
+/* Responsivo */
+@media (max-width:768px){
+    .contanier {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-facebook {
+        margin: 0 auto;
+    }
+    .logins-recentes {
+        text-align: center;
+    }
+}
